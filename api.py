@@ -6,6 +6,27 @@ from flask_httpauth import HTTPBasicAuth
 from passlib.apps import custom_app_context as pwd_context
 from itsdangerous import (TimedJSONWebSignatureSerializer
                           as Serializer, BadSignature, SignatureExpired)
+from werkzeug.utils import secure_filename
+from flask import render_template
+
+#logging
+
+
+def apiLog(line):
+    #if not os.path.exists('apiLog.log'):
+    line =[str(w) for w in line]
+    flog  = open('apiLog.log','a')
+    import datetime 
+    now = datetime.datetime.now()
+    time = str(now)
+
+    row = [time]
+    row.extend(line)
+    flog.write('\t'.join(row)+'\n')
+    flog.close()
+
+
+
 
 # initialization
 app = Flask(__name__)
@@ -96,8 +117,72 @@ def get_auth_token():
 def get_resource():
     return jsonify({'data': 'Hello, %s!' % g.user.username})
 
+@app.route('/api/upload',methods=['GET','POST'])
+@auth.login_required
+def upload():
+    if request.method == 'POST':
+        f = request.files['file']
+        filename = secure_filename(f.filename)
+        #f.save(os.path.join('app/static',filename))
+        f.save('static/'+str(filename))
+        print ('remote_addr:',request.remote_addr)
+        print ('username:',g.user.username)
+        line = [ g.user.username,'api/upload',request.remote_addr,str(filename)]
+        apiLog(line)
+        return 'ok'
+    else:
+        return 'method should be post'
+
+from flask import send_file, send_from_directory
+import os
+from flask import make_response
+
+
+@app.route("/")
+def index():
+    #cmd = '$curl -u miguel:python -i -X POST -F "file=@filename.pdf" http://pdf.simplified.org.cn:3000/api/vbeta'
+    return render_template('index.html')
+    #return '<h2>Hello! Welcome to use PDFPARSER~</h2>'+cmd
+
+
+@app.route("/api/download/<filename>", methods=['GET'])
+def download_file(filename):
+    directory = 'static'
+    response = make_response(send_from_directory(directory, filename, as_attachment=True))
+    response.headers["Content-Disposition"] = "attachment; filename={}".format(filename.encode().decode('latin-1'))
+    return response
+
+import sys
+sys.path.append('..')
+from pdfparser1207 import Parser
+
+
+@app.route('/api/vbeta',methods=['GET','POST'])
+@auth.login_required
+def run():
+    if request.method == 'POST':
+        f = request.files['file']
+        filename = secure_filename(f.filename)
+        f.save('static/'+str(filename))
+        print ('remote_addr:',request.remote_addr)
+        print ('username:',g.user.username)
+        line = [ g.user.username,'api/vbeta',request.remote_addr,str(filename)]
+        apiLog(line)
+        directory ='static'
+        result = Parser('static/'+str(filename )) 
+        result.to_csv(directory)
+        filename  = filename[:-4]+'.csv'
+        response = make_response(send_from_directory(directory, filename, as_attachment=True))
+        response.headers["Content-Disposition"] = "attachment; filename={}".format(filename.encode().decode('latin-1'))
+        return response
+    else:
+        return 'method should be post'
+
+
 
 if __name__ == '__main__':
     if not os.path.exists('db.sqlite'):
         db.create_all()
-    app.run(debug=True)
+    if not os.path.exists('static'):
+        os.mkdir('static')
+    app.run(host='0.0.0.0',port=3000)

@@ -97,7 +97,7 @@ These credentials can now be used to access protected resources:
     $ curl -u miguel:python -i -X GET http://216.189.157.94:5000/api/resource
     $ curl -u miguel:python -i -X POST -F "file=@hetong.pdf"  http://216.189.157.94:5000/api/upload
 
-    $ curl -u miguel:python -i -X POST -F "file=@hetong.pdf"  http://216.189.157.94:5000/api/vbeta
+    $ curl -u miguel:python -i -X POST -F "file=@hetong.pdf"  http://216.189.157.94:3000/api/vbeta
 
 
 Using the wrong credentials the request is refused:

@@ -1,0 +1,59 @@
+<title>pdfparser</title>
+<h1>Hello! Welcome to use PDFPARSER~</h1>
+
+<body>
+<div>
+PDFPARSER是一款pdf内容识别软件，提取其中文本内容，标题和<strong>表格</strong>，将其转化为标记的文本文件，并进而进行下一步的内容分析或者数据分析。PDFPARSER的关键特征是
+<ul>
+<li>准确识别pdf中的表格元素，识别其表格中的每一行每一列，并将其采取“,”进行分割;</li>
+<li>采取API的方式进行调用，支持编程的方式进行大批量的pdf文件处理;</li>
+</ul>
+我们相信未来大规模处理PDF文件会成为常态，PDFPARSER愿与你同行。
+</div>
+
+
+<div>
+	<div><h3>使用说明</h3>
+		<div>1.使用curl命令
+		<ul>
+			<li> 用户注册
+				<div>
+				$curl -i -X POST -H "Content-Type: application/json" -d '{"username":"username","password":"password"}' http://pdf.simplified.org.cn:3000/api/users
+			    </div>
+			</li>
+
+			<li> 调用API解析文件
+				<div>
+				$curl -u username:password -i -X POST -F "file=@filename.pdf" http://pdf.simplified.org.cn:3000/api/vbeta
+			</div>
+			</li>
+		</ul>
+	</div>
+	<div>2.python调用
+		<div align="center">
+			<iframe  src="http://pdf.simplified.org.cn/codeshow.html" width="1000" height="400" scrolling="yes" frameborder=0></iframe>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<div><h3>账户与定价</h3>
+	<ul>
+	<li>账号注册可获取100页试用权限
+	</li>
+	<li>
+		定价标准：0.1元/页
+	</li>
+	</ul>
+</div>
+
+
+<div><h3>联系方式</h3>
+	<ul>
+	<li>邮箱：13262897337@163.com
+	</li>
+	</ul>
+</div>
+<script type="text/javascript"></script>
+</body>

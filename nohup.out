@@ -1,0 +1,519 @@
+/root/anaconda3/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py:839: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Running on http://0.0.0.0:3000/ (Press CTRL+C to quit)
+222.66.158.164 - - [15/Feb/2019 01:35:45] "[37mGET / HTTP/1.1[0m" 200 -
+/root/anaconda3/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py:839: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Running on http://0.0.0.0:3000/ (Press CTRL+C to quit)
+222.66.158.164 - - [15/Feb/2019 01:37:48] "[37mGET / HTTP/1.1[0m" 200 -
+222.66.158.164 - - [15/Feb/2019 04:29:35] "[37mGET / HTTP/1.1[0m" 200 -
+52.91.61.38 - - [15/Feb/2019 04:32:08] "[37mGET / HTTP/1.1[0m" 200 -
+[2019-02-15 04:39:37,871] ERROR in app: Exception on /api/vbeta [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask_httpauth.py", line 93, in decorated
+    return f(*args, **kwargs)
+  File "api.py", line 172, in run
+    result.to_csv(directory)
+  File "../pdfparser1108/main.py", line 234, in to_csv
+    fwriter.writerows(table)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 3-18: ordinal not in range(128)
+222.66.158.164 - - [15/Feb/2019 04:39:37] "[1m[35mPOST /api/vbeta HTTP/1.1[0m" 500 -
+[2019-02-15 04:42:55,112] ERROR in app: Exception on /api/vbeta [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask_httpauth.py", line 93, in decorated
+    return f(*args, **kwargs)
+  File "api.py", line 172, in run
+    result.to_csv(directory)
+  File "../pdfparser1108/main.py", line 234, in to_csv
+    fwriter.writerows(table)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 3-18: ordinal not in range(128)
+222.66.158.164 - - [15/Feb/2019 04:42:55] "[1m[35mPOST /api/vbeta HTTP/1.1[0m" 500 -
+222.66.158.164 - - [15/Feb/2019 04:44:30] "[1m[31mPOST /api/vbeta HTTP/1.1[0m" 400 -
+106.45.9.160 - - [15/Feb/2019 04:44:30] "[32mGET http://www.123cha.com HTTP/1.1[0m" 301 -
+124.66.39.64 - - [15/Feb/2019 04:44:30] "[33mCONNECT www.baidu.com HTTP/1.1[0m" 404 -
+58.248.203.174 - - [15/Feb/2019 04:44:31] "[37mGET http://api.ipify.org/ HTTP/1.1[0m" 200 -
+106.114.69.37 - - [15/Feb/2019 04:44:32] "[37mGET http://www.epochtimes.com/ HTTP/1.1[0m" 200 -
+106.47.41.125 - - [15/Feb/2019 04:44:32] "[33mGET http://www.rfa.org/english/ HTTP/1.1[0m" 404 -
+60.13.7.185 - - [15/Feb/2019 04:44:32] "[33mCONNECT www.baidu.com:443 HTTP/1.1[0m" 404 -
+101.248.191.30 - - [15/Feb/2019 04:44:33] "[33mCONNECT www.voanews.com:443 HTTP/1.1[0m" 404 -
+171.36.130.213 - - [15/Feb/2019 04:44:33] "[37mGET http://boxun.com/ HTTP/1.1[0m" 200 -
+220.175.61.72 - - [15/Feb/2019 04:44:36] "[33mCONNECT cn.bing.com:443 HTTP/1.1[0m" 404 -
+180.95.231.78 - - [15/Feb/2019 04:44:37] "[37mGET http://www.123cha.com/ HTTP/1.1[0m" 200 -
+1.80.145.125 - - [15/Feb/2019 04:44:38] "[37mGET http://www.minghui.org/ HTTP/1.1[0m" 200 -
+220.250.63.62 - - [15/Feb/2019 04:44:40] "[37mGET http://www.ip.cn/ HTTP/1.1[0m" 200 -
+222.66.158.164 - - [15/Feb/2019 04:44:48] "[1m[31mPOST /api/vbeta HTTP/1.1[0m" 400 -
+222.66.158.164 - - [15/Feb/2019 04:44:58] "[1m[31mPOST /api/vbeta HTTP/1.1[0m" 400 -
+222.66.158.164 - - [15/Feb/2019 04:45:56] "[1m[31mPOST /api/vbeta HTTP/1.1[0m" 400 -
+[2019-02-15 04:46:14,236] ERROR in app: Exception on /api/vbeta [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask_httpauth.py", line 93, in decorated
+    return f(*args, **kwargs)
+  File "api.py", line 172, in run
+    result.to_csv(directory)
+  File "../pdfparser1108/main.py", line 234, in to_csv
+    fwriter.writerows(table)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 3-18: ordinal not in range(128)
+222.66.158.164 - - [15/Feb/2019 04:46:14] "[1m[35mPOST /api/vbeta HTTP/1.1[0m" 500 -
+[2019-02-15 04:46:26,783] ERROR in app: Exception on /api/vbeta [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask_httpauth.py", line 93, in decorated
+    return f(*args, **kwargs)
+  File "api.py", line 172, in run
+    result.to_csv(directory)
+  File "../pdfparser1108/main.py", line 234, in to_csv
+    fwriter.writerows(table)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 3-18: ordinal not in range(128)
+222.66.158.164 - - [15/Feb/2019 04:46:26] "[1m[35mPOST /api/vbeta HTTP/1.1[0m" 500 -
+[2019-02-15 04:46:36,849] ERROR in app: Exception on /api/vbeta [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask_httpauth.py", line 93, in decorated
+    return f(*args, **kwargs)
+  File "api.py", line 172, in run
+    result.to_csv(directory)
+  File "../pdfparser1108/main.py", line 234, in to_csv
+    fwriter.writerows(table)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 3-18: ordinal not in range(128)
+222.66.158.164 - - [15/Feb/2019 04:46:36] "[1m[35mPOST /api/vbeta HTTP/1.1[0m" 500 -
+196.52.43.66 - - [15/Feb/2019 05:15:17] "[37mGET / HTTP/1.0[0m" 200 -
+[2019-02-15 08:25:31,160] ERROR in app: Exception on /api/vbeta [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask_httpauth.py", line 93, in decorated
+    return f(*args, **kwargs)
+  File "api.py", line 172, in run
+    result.to_csv(directory)
+  File "../pdfparser1108/main.py", line 246, in to_csv
+    '<' + codecs.encode(lmodule,'gbk','ignore').decode('gbk') + '>']) # \u5ffd\u7565\u4e0d\u80fdgbk\u7f16\u7801\u7684\u5b57\u7b26
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 6-19: ordinal not in range(128)
+222.66.158.164 - - [15/Feb/2019 08:25:31] "[1m[35mPOST /api/vbeta HTTP/1.1[0m" 500 -
+59.63.207.85 - - [16/Feb/2019 05:34:13] "[37mGET / HTTP/1.1[0m" 200 -
+[2019-02-16 05:34:47,470] ERROR in app: Exception on /api/vbeta [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask_httpauth.py", line 93, in decorated
+    return f(*args, **kwargs)
+  File "api.py", line 172, in run
+    result.to_csv(directory)
+  File "../pdfparser1108/main.py", line 234, in to_csv
+    fwriter.writerows(table)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 3-18: ordinal not in range(128)
+59.63.207.85 - - [16/Feb/2019 05:34:47] "[1m[35mPOST /api/vbeta HTTP/1.1[0m" 500 -
+/root/anaconda3/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py:839: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Running on http://0.0.0.0:3000/ (Press CTRL+C to quit)
+59.63.207.85 - - [16/Feb/2019 11:56:05] "[37mGET / HTTP/1.1[0m" 200 -
+59.63.207.85 - - [16/Feb/2019 12:09:11] "[37mPOST /api/vbeta HTTP/1.1[0m" 200 -
+59.63.207.85 - - [16/Feb/2019 12:09:45] "[37mPOST /api/vbeta HTTP/1.1[0m" 200 -
+59.63.207.85 - - [16/Feb/2019 12:10:28] "[37mPOST /api/vbeta HTTP/1.1[0m" 200 -
+59.63.207.85 - - [16/Feb/2019 12:13:54] "[37mPOST /api/vbeta HTTP/1.1[0m" 200 -
+59.63.207.85 - - [16/Feb/2019 12:14:02] "[37mPOST /api/vbeta HTTP/1.1[0m" 200 -
+59.63.207.85 - - [16/Feb/2019 12:16:17] "[37mPOST /api/vbeta HTTP/1.1[0m" 200 -
+59.63.207.85 - - [16/Feb/2019 12:18:40] "[37mPOST /api/vbeta HTTP/1.1[0m" 200 -
+125.76.61.66 - - [16/Feb/2019 12:18:40] "[33mCONNECT www.baidu.com HTTP/1.1[0m" 404 -
+58.19.1.90 - - [16/Feb/2019 12:18:40] "[32mGET http://www.123cha.com HTTP/1.1[0m" 301 -
+121.229.30.2 - - [16/Feb/2019 12:18:40] "[37mGET http://api.ipify.org/ HTTP/1.1[0m" 200 -
+113.140.250.145 - - [16/Feb/2019 12:18:41] "[33mCONNECT www.baidu.com:443 HTTP/1.1[0m" 404 -
+101.249.212.17 - - [16/Feb/2019 12:18:41] "[33mCONNECT cn.bing.com:443 HTTP/1.1[0m" 404 -
+1.30.28.28 - - [16/Feb/2019 12:18:41] "[33mCONNECT www.voanews.com:443 HTTP/1.1[0m" 404 -
+60.13.7.78 - - [16/Feb/2019 12:18:42] "[37mGET http://www.minghui.org/ HTTP/1.1[0m" 200 -
+180.95.231.151 - - [16/Feb/2019 12:18:43] "[37mGET http://www.ip.cn/ HTTP/1.1[0m" 200 -
+171.36.132.27 - - [16/Feb/2019 12:18:43] "[37mGET http://www.123cha.com/ HTTP/1.1[0m" 200 -
+123.232.226.63 - - [16/Feb/2019 12:18:44] "[33mGET http://www.rfa.org/english/ HTTP/1.1[0m" 404 -
+125.84.177.18 - - [16/Feb/2019 12:18:48] "[37mGET http://boxun.com/ HTTP/1.1[0m" 200 -
+58.248.200.103 - - [16/Feb/2019 12:18:49] "[37mGET http://www.epochtimes.com/ HTTP/1.1[0m" 200 -
+220.175.61.235 - - [16/Feb/2019 12:18:50] "[37mGET http://www.wujieliulan.com/ HTTP/1.1[0m" 200 -
+59.63.207.85 - - [16/Feb/2019 12:18:56] "[37mPOST /api/vbeta HTTP/1.1[0m" 200 -
+59.63.207.85 - - [16/Feb/2019 12:19:25] "[37mPOST /api/vbeta HTTP/1.1[0m" 200 -
+59.63.207.85 - - [16/Feb/2019 12:20:33] "[37mPOST /api/vbeta HTTP/1.1[0m" 200 -
+59.63.207.85 - - [16/Feb/2019 12:22:27] "[37mPOST /api/vbeta HTTP/1.1[0m" 200 -
+59.63.207.85 - - [16/Feb/2019 14:34:18] "[37mPOST /api/vbeta HTTP/1.1[0m" 200 -
+220.200.24.188 - - [16/Feb/2019 14:34:18] "[33mCONNECT www.baidu.com HTTP/1.1[0m" 404 -
+182.88.171.245 - - [16/Feb/2019 14:34:18] "[32mGET http://www.123cha.com HTTP/1.1[0m" 301 -
+121.57.224.52 - - [16/Feb/2019 14:34:18] "[37mGET http://api.ipify.org/ HTTP/1.1[0m" 200 -
+61.52.71.19 - - [16/Feb/2019 14:34:19] "[33mCONNECT cn.bing.com:443 HTTP/1.1[0m" 404 -
+117.14.151.100 - - [16/Feb/2019 14:34:20] "[37mGET http://www.ip.cn/ HTTP/1.1[0m" 200 -
+112.66.101.179 - - [16/Feb/2019 14:34:20] "[37mGET http://boxun.com/ HTTP/1.1[0m" 200 -
+1.30.25.85 - - [16/Feb/2019 14:34:21] "[37mGET http://www.wujieliulan.com/ HTTP/1.1[0m" 200 -
+113.206.178.40 - - [16/Feb/2019 14:34:21] "[37mGET http://www.minghui.org/ HTTP/1.1[0m" 200 -
+101.68.4.24 - - [16/Feb/2019 14:34:21] "[37mGET http://www.123cha.com/ HTTP/1.1[0m" 200 -
+110.167.93.48 - - [16/Feb/2019 14:34:21] "[33mCONNECT www.voanews.com:443 HTTP/1.1[0m" 404 -
+223.166.75.85 - - [16/Feb/2019 14:34:24] "[37mGET http://www.epochtimes.com/ HTTP/1.1[0m" 200 -
+113.200.71.105 - - [16/Feb/2019 14:34:28] "[33mGET http://www.rfa.org/english/ HTTP/1.1[0m" 404 -
+123.163.114.37 - - [16/Feb/2019 14:34:28] "[33mCONNECT www.baidu.com:443 HTTP/1.1[0m" 404 -
+[2019-02-16 14:54:58,585] ERROR in app: Exception on /api/users [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "api.py", line 86, in new_user
+    username = request.json.get('username')
+AttributeError: 'NoneType' object has no attribute 'get'
+59.63.207.85 - - [16/Feb/2019 14:54:58] "[1m[35mPOST /api/users HTTP/1.1[0m" 500 -
+[2019-02-16 14:55:36,297] ERROR in app: Exception on /api/users [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "api.py", line 86, in new_user
+    username = request.json.get('username')
+AttributeError: 'NoneType' object has no attribute 'get'
+59.63.207.85 - - [16/Feb/2019 14:55:36] "[1m[35mPOST /api/users HTTP/1.1[0m" 500 -
+[2019-02-16 14:57:02,185] ERROR in app: Exception on /api/users [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "api.py", line 86, in new_user
+    username = request.json.get('username')
+AttributeError: 'NoneType' object has no attribute 'get'
+59.63.207.85 - - [16/Feb/2019 14:57:02] "[1m[35mPOST /api/users HTTP/1.1[0m" 500 -
+59.63.207.85 - - [16/Feb/2019 14:59:40] "[37mPOST /api/users HTTP/1.1[0m" 201 -
+59.63.207.85 - - [16/Feb/2019 15:00:50] "[37mPOST /api/vbeta HTTP/1.1[0m" 200 -
+222.66.158.164 - - [18/Feb/2019 02:05:51] "[37mGET / HTTP/1.1[0m" 200 -
+71.6.232.5 - - [18/Feb/2019 06:22:28] "[37mGET / HTTP/1.1[0m" 200 -
+54.70.171.161 - - [19/Feb/2019 06:28:50] "[37mGET / HTTP/1.1[0m" 200 -
+196.52.43.59 - - [19/Feb/2019 08:44:26] "[37mGET / HTTP/1.0[0m" 200 -
+192.162.101.55 - - [19/Feb/2019 13:34:28] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+192.162.101.55 - - [19/Feb/2019 13:34:28] "[1m[35m  /*à     Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+185.222.211.18 - - [19/Feb/2019 16:03:43] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.222.211.18 - - [19/Feb/2019 16:03:43] "[1m[35m  /*à     Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+/root/anaconda3/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py:839: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Running on http://0.0.0.0:3000/ (Press CTRL+C to quit)
+59.63.207.85 - - [20/Feb/2019 14:31:43] "[37mGET / HTTP/1.1[0m" 200 -
+59.63.207.85 - - [20/Feb/2019 14:34:34] "[37mGET / HTTP/1.1[0m" 200 -
+61.151.178.171 - - [20/Feb/2019 14:34:43] "[37mGET /?nsukey=B562B3h8OPAE2FmLO6ISkt8dwbqI9W466oZHBfht2BuB2FbudXw88H65M6NYwjYedsA7xwEdqgHLBnO7j2BqNDstXlOYdoxQeZrhYHBMfK8ePtoTMgf42F2B1g6xcLXBycTaebge5IVaoGexSLZ5wqseF1c0MtVJA4b746WEClCPA5RqqYz2FEdx0KxZv7UCRDqpeuF3gO7Syv0QopH3JDP3GLydWg3D3D HTTP/1.1[0m" 200 -
+118.212.230.204 - - [20/Feb/2019 14:35:16] "[37mGET / HTTP/1.1[0m" 200 -
+59.63.207.85 - - [20/Feb/2019 14:35:38] "[37mGET / HTTP/1.1[0m" 200 -
+101.89.19.149 - - [20/Feb/2019 14:35:43] "[37mGET /?nsukey=B56%2B3h8OPAE%2FmLO6ISkt8dwbqI9W466oZHBfht%2BuB%2FbudXw88H65M6NYwjYedsA7xwEdqgHLBnO7j%2BqNDstXlOYdoxQeZrhYHBMfK8ePtoTMgf4%2F%2B1g6xcLXBycTaebge5IVaoGexSLZ5wqseF1c0MtVJA4b746WEClCPA5RqqYz%2FEdx0KxZv7UCRDqpeuF3gO7Syv0QopH3JDP3GLydWg%3D%3D HTTP/1.1[0m" 200 -
+101.89.19.197 - - [20/Feb/2019 14:35:43] "[37mGET /?nsukey=B56%2B3h8OPAE%2FmLO6ISkt8dwbqI9W466oZHBfht%2BuB%2FbudXw88H65M6NYwjYedsA7xwEdqgHLBnO7j%2BqNDstXlOYdoxQeZrhYHBMfK8ePtoTMgf4%2F%2B1g6xcLXBycTaebge5IVaoGexSLZ5wqseF1c0MtVJA4b746WEClCPA5RqqYz%2FEdx0KxZv7UCRDqpeuF3gO7Syv0QopH3JDP3GLydWg%3D%3D HTTP/1.1[0m" 200 -
+118.212.230.204 - - [20/Feb/2019 14:37:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+59.63.207.85 - - [20/Feb/2019 14:43:06] "[37mGET / HTTP/1.1[0m" 200 -
+59.63.207.85 - - [20/Feb/2019 14:43:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+185.222.211.18 - - [20/Feb/2019 15:43:39] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.222.211.18 - - [20/Feb/2019 15:43:39] "[1m[35m  /*à     Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+192.162.101.55 - - [20/Feb/2019 22:14:25] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+192.162.101.55 - - [20/Feb/2019 22:14:25] "[1m[35m  /*à     Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+222.66.158.164 - - [21/Feb/2019 06:39:55] "[37mGET / HTTP/1.1[0m" 200 -
+222.66.158.164 - - [21/Feb/2019 06:40:52] "[37mGET / HTTP/1.1[0m" 200 -
+54.174.10.46 - - [21/Feb/2019 06:41:26] "[37mGET / HTTP/1.1[0m" 200 -
+222.66.158.164 - - [21/Feb/2019 08:14:26] "[37mPOST /api/vbeta HTTP/1.1[0m" 200 -
+222.66.158.164 - - [21/Feb/2019 08:26:25] "[37mGET / HTTP/1.1[0m" 200 -
+222.66.158.164 - - [21/Feb/2019 08:26:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+222.66.158.164 - - [21/Feb/2019 08:59:15] "[37mGET / HTTP/1.1[0m" 200 -
+222.66.158.164 - - [21/Feb/2019 09:00:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+163.172.94.153 - - [22/Feb/2019 00:33:17] code 400, message Bad request version ('À\x14À')
+163.172.94.153 - - [22/Feb/2019 00:33:17] "[1m[35m   H¨´H§ä8íF/@ÏW¾·MÍÁÆïGþe°m   À/À+ÀÀÀÀ	ÀÀ[0m" HTTPStatus.BAD_REQUEST -
+191.96.110.25 - - [22/Feb/2019 03:38:38] "[37mGET / HTTP/1.0[0m" 200 -
+163.172.106.110 - - [22/Feb/2019 05:45:31] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+163.172.106.110 - - [22/Feb/2019 05:45:31] "[1m[35m  *%à     Cookie: mstshash=Test[0m" HTTPStatus.BAD_REQUEST -
+163.172.106.110 - - [22/Feb/2019 05:45:31] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+163.172.106.110 - - [22/Feb/2019 05:45:31] "[1m[35m  *%à     Cookie: mstshash=Test[0m" HTTPStatus.BAD_REQUEST -
+222.66.158.164 - - [22/Feb/2019 08:09:22] "[37mGET / HTTP/1.1[0m" 200 -
+52.91.61.38 - - [22/Feb/2019 08:14:09] "[37mGET / HTTP/1.1[0m" 200 -
+37.1.207.63 - - [22/Feb/2019 19:54:03] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+37.1.207.63 - - [22/Feb/2019 19:54:03] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+37.1.207.63 - - [22/Feb/2019 20:27:54] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+37.1.207.63 - - [22/Feb/2019 20:27:54] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+185.107.45.51 - - [22/Feb/2019 20:43:20] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+185.107.45.51 - - [22/Feb/2019 20:43:20] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+185.107.45.51 - - [22/Feb/2019 21:10:27] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+185.107.45.51 - - [22/Feb/2019 21:10:27] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+59.63.207.85 - - [23/Feb/2019 15:39:21] "[37mGET / HTTP/1.1[0m" 200 -
+37.1.207.63 - - [24/Feb/2019 05:48:15] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+37.1.207.63 - - [24/Feb/2019 05:48:15] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+37.1.207.63 - - [24/Feb/2019 05:57:04] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+37.1.207.63 - - [24/Feb/2019 05:57:04] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+71.6.232.5 - - [25/Feb/2019 06:51:03] "[37mGET / HTTP/1.1[0m" 200 -
+59.63.207.85 - - [25/Feb/2019 14:08:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+185.156.177.78 - - [25/Feb/2019 16:36:58] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.156.177.78 - - [25/Feb/2019 16:36:58] "[1m[35m  /*à     Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+191.96.110.25 - - [26/Feb/2019 04:15:40] "[37mGET / HTTP/1.0[0m" 200 -
+212.92.112.171 - - [26/Feb/2019 07:12:01] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+212.92.112.171 - - [26/Feb/2019 07:12:01] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+212.92.112.171 - - [26/Feb/2019 07:20:44] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+212.92.112.171 - - [26/Feb/2019 07:20:44] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+185.156.177.153 - - [26/Feb/2019 21:15:20] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+185.156.177.153 - - [26/Feb/2019 21:15:20] "[1m[35m  *%à     Cookie: mstshash=Test[0m" HTTPStatus.BAD_REQUEST -
+185.156.177.153 - - [26/Feb/2019 21:15:20] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+185.156.177.153 - - [26/Feb/2019 21:15:20] "[1m[35m  *%à     Cookie: mstshash=Test[0m" HTTPStatus.BAD_REQUEST -
+191.96.214.49 - - [28/Feb/2019 23:03:37] "[37mGET / HTTP/1.0[0m" 200 -
+185.156.177.2 - - [01/Mar/2019 03:35:43] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+185.156.177.2 - - [01/Mar/2019 03:35:43] "[1m[35m  *%à     Cookie: mstshash=Test[0m" HTTPStatus.BAD_REQUEST -
+185.156.177.2 - - [01/Mar/2019 03:35:43] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+185.156.177.2 - - [01/Mar/2019 03:35:43] "[1m[35m  *%à     Cookie: mstshash=Test[0m" HTTPStatus.BAD_REQUEST -
+3.87.88.0 - - [01/Mar/2019 06:54:10] "[37mGET / HTTP/1.1[0m" 200 -
+59.63.207.85 - - [01/Mar/2019 14:41:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+185.156.177.100 - - [01/Mar/2019 19:41:58] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.156.177.100 - - [01/Mar/2019 19:41:58] "[1m[35m  /*à     Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+115.238.194.112 - - [02/Mar/2019 06:04:10] "[37mGET / HTTP/1.1[0m" 200 -
+193.188.23.14 - - [02/Mar/2019 12:35:29] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+193.188.23.14 - - [02/Mar/2019 12:35:29] "[1m[35m  *%à     Cookie: mstshash=Test[0m" HTTPStatus.BAD_REQUEST -
+193.188.23.14 - - [02/Mar/2019 12:35:29] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+193.188.23.14 - - [02/Mar/2019 12:35:29] "[1m[35m  *%à     Cookie: mstshash=Test[0m" HTTPStatus.BAD_REQUEST -
+212.92.112.71 - - [03/Mar/2019 06:08:05] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+212.92.112.71 - - [03/Mar/2019 06:08:05] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+212.92.112.71 - - [03/Mar/2019 06:27:35] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+212.92.112.71 - - [03/Mar/2019 06:27:35] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+212.92.112.71 - - [03/Mar/2019 14:12:35] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+212.92.112.71 - - [03/Mar/2019 14:12:35] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+212.92.112.71 - - [03/Mar/2019 14:32:04] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+212.92.112.71 - - [03/Mar/2019 14:32:04] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+107.170.194.191 - - [03/Mar/2019 16:51:17] "[37mGET / HTTP/1.1[0m" 200 -
+185.156.177.242 - - [03/Mar/2019 18:41:53] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+185.156.177.242 - - [03/Mar/2019 18:41:53] "[1m[35m  *%à     Cookie: mstshash=Test[0m" HTTPStatus.BAD_REQUEST -
+185.156.177.242 - - [03/Mar/2019 18:41:53] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+185.156.177.242 - - [03/Mar/2019 18:41:53] "[1m[35m  *%à     Cookie: mstshash=Test[0m" HTTPStatus.BAD_REQUEST -
+71.6.232.5 - - [04/Mar/2019 07:16:22] "[37mGET / HTTP/1.1[0m" 200 -
+185.153.198.240 - - [04/Mar/2019 12:36:09] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+185.153.198.240 - - [04/Mar/2019 12:36:09] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+185.254.122.5 - - [05/Mar/2019 03:46:54] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+185.254.122.5 - - [05/Mar/2019 03:46:54] "[1m[35m  *%à     Cookie: mstshash=test[0m" HTTPStatus.BAD_REQUEST -
+185.153.196.133 - - [05/Mar/2019 04:06:08] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+185.153.196.133 - - [05/Mar/2019 04:06:08] "[1m[35m  *%à     Cookie: mstshash=Test[0m" HTTPStatus.BAD_REQUEST -
+185.153.196.133 - - [05/Mar/2019 04:06:08] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+185.153.196.133 - - [05/Mar/2019 04:06:08] "[1m[35m  *%à     Cookie: mstshash=Test[0m" HTTPStatus.BAD_REQUEST -
+71.6.146.185 - - [05/Mar/2019 08:51:41] "[37mGET / HTTP/1.1[0m" 200 -
+71.6.146.185 - - [05/Mar/2019 08:51:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+196.52.43.123 - - [05/Mar/2019 21:47:56] "[37mGET / HTTP/1.0[0m" 200 -
+163.172.94.153 - - [06/Mar/2019 02:48:12] code 400, message Bad request syntax ('\x16\x03\x01\x00\x8c\x01\x00\x00\x88\x03\x03´.x\x06M¾[\x9f$Ò\x05÷u\xad\xad\rô\\ËñÍ\x91³\x95b=0@\x0bw9s\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\tÀ\x14À')
+163.172.94.153 - - [06/Mar/2019 02:48:12] "[1m[35m   ´.xM¾[$Ò÷u­­ô\ËñÍ³b=0@w9s  À/À+ÀÀÀÀ	ÀÀ[0m" HTTPStatus.BAD_REQUEST -
+185.222.209.211 - - [07/Mar/2019 08:50:43] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.222.209.211 - - [07/Mar/2019 08:50:43] "[1m[35m  /*à     Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+193.188.22.102 - - [07/Mar/2019 09:03:20] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+193.188.22.102 - - [07/Mar/2019 09:03:20] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+185.222.211.146 - - [07/Mar/2019 10:24:36] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.222.211.146 - - [07/Mar/2019 10:24:36] "[1m[35m  /*à     Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+188.0.236.212 - - [07/Mar/2019 12:46:51] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+188.0.236.212 - - [07/Mar/2019 12:46:51] "[1m[35m  /*à     Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+115.238.194.112 - - [08/Mar/2019 01:25:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+222.66.158.164 - - [08/Mar/2019 05:21:51] "[37mGET / HTTP/1.1[0m" 200 -
+222.66.158.164 - - [08/Mar/2019 05:21:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+54.202.225.77 - - [08/Mar/2019 05:23:20] "[37mGET / HTTP/1.1[0m" 200 -
+212.92.115.57 - - [08/Mar/2019 07:47:45] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+212.92.115.57 - - [08/Mar/2019 07:47:45] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+212.92.115.197 - - [08/Mar/2019 08:26:33] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+212.92.115.197 - - [08/Mar/2019 08:26:33] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+212.92.115.57 - - [08/Mar/2019 09:37:02] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+212.92.115.57 - - [08/Mar/2019 09:37:02] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+212.92.115.197 - - [08/Mar/2019 10:12:25] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+212.92.115.197 - - [08/Mar/2019 10:12:25] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+185.209.0.42 - - [08/Mar/2019 17:58:55] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.209.0.42 - - [08/Mar/2019 17:58:55] "[1m[35m  /*à     Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+185.142.236.34 - - [08/Mar/2019 19:36:00] "[37mGET / HTTP/1.1[0m" 200 -
+185.142.236.34 - - [08/Mar/2019 19:36:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+104.200.16.90 - - [09/Mar/2019 03:59:13] "[37mGET / HTTP/1.0[0m" 200 -
+212.92.123.65 - - [09/Mar/2019 08:49:24] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+212.92.123.65 - - [09/Mar/2019 08:49:24] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+212.92.115.197 - - [09/Mar/2019 09:37:22] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+212.92.115.197 - - [09/Mar/2019 09:37:22] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+212.92.123.65 - - [09/Mar/2019 10:42:01] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+212.92.123.65 - - [09/Mar/2019 10:42:01] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+212.92.115.197 - - [09/Mar/2019 11:22:42] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+212.92.115.197 - - [09/Mar/2019 11:22:42] "[1m[35m  +&à     Cookie: mstshash=hello[0m" HTTPStatus.BAD_REQUEST -
+196.52.43.63 - - [09/Mar/2019 13:19:17] "[37mGET / HTTP/1.0[0m" 200 -
+71.6.232.5 - - [11/Mar/2019 04:25:48] "[37mGET / HTTP/1.1[0m" 200 -
+185.153.198.225 - - [11/Mar/2019 11:35:52] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.153.198.225 - - [11/Mar/2019 11:35:52] "[1m[35m  /*à     Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+125.64.94.197 - - [11/Mar/2019 19:37:17] "[37mGET / HTTP/1.0[0m" 200 -
+124.91.16.66 - - [12/Mar/2019 02:08:38] "[37mGET / HTTP/1.1[0m" 200 -
+124.91.16.66 - - [12/Mar/2019 02:08:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+222.66.158.164 - - [12/Mar/2019 09:19:03] "[37mGET / HTTP/1.1[0m" 200 -
+222.66.158.164 - - [12/Mar/2019 09:19:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+34.219.36.191 - - [12/Mar/2019 09:20:17] "[37mGET / HTTP/1.1[0m" 200 -
+82.221.105.6 - - [12/Mar/2019 09:42:32] "[37mGET / HTTP/1.1[0m" 200 -
+82.221.105.6 - - [12/Mar/2019 09:42:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+85.14.245.124 - - [12/Mar/2019 11:09:26] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+85.14.245.124 - - [12/Mar/2019 11:09:26] "[1m[35m  /*à     Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+196.52.43.101 - - [12/Mar/2019 22:58:09] "[37mGET / HTTP/1.0[0m" 200 -
+185.153.197.12 - - [14/Mar/2019 01:25:48] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.153.197.12 - - [14/Mar/2019 01:25:48] "[1m[35m  /*à     Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+198.108.67.48 - - [14/Mar/2019 01:35:16] "[37mGET / HTTP/1.1[0m" 200 -
+196.52.43.102 - - [14/Mar/2019 23:30:25] "[37mGET / HTTP/1.0[0m" 200 -
+185.153.197.10 - - [15/Mar/2019 03:42:53] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.153.197.10 - - [15/Mar/2019 03:42:53] "[1m[35m  /*à     Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+66.249.83.12 - - [16/Mar/2019 12:13:19] "[37mGET / HTTP/1.1[0m" 200 -
+66.249.83.10 - - [16/Mar/2019 12:13:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+112.64.161.253 - - [17/Mar/2019 09:29:56] "[37mGET /?nsukey=%2B45XOs%2FJlqyGHBf9cF%2BRtZcJV1l1WpoO0Fw22f3L4KYESHi%2Bek7B6T5bf9cGqmLga8tQW%2BeY%2FFYUj%2B0unhuYLlVNMyZ1Uh6XqCfR3d2xvarDUZHklXqVfi52ytfA0LPr21Bf7hl8tM%2BLcverBvB5tbIcQObluliOSXixwk2hGNAo2012d3FNaxU0ncCApSmI2pMxW552aeOCZVAIjENq1Q%3D%3D HTTP/1.1[0m" 200 -
+112.64.161.253 - - [17/Mar/2019 09:30:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+113.96.218.50 - - [17/Mar/2019 09:42:00] "[37mGET /?nsukey=q7LBwNTnyKPWhonDEKk1fA5EaOLZ2B7mSAZW4Nz70XoYekYUlRcUfnvs8QZCMPH2BkbYYzTJLaaxYBq81vWF2FtKH7RVbeRcVPZx7YSziLJ7Ri2FXdeCp2B2a3UiSHsBrAFLR7TdxvFgvKP99BExjWqj1Aot0N3T1GxtdQB2BCwtzG1qh2FlN2mguCRf2BVmKQEv8y84otP4OiWyvO2FQ47vDbc2Bsvg3D3D HTTP/1.1[0m" 200 -
+114.221.190.73 - - [17/Mar/2019 09:42:09] "[37mGET /?nsukey=q7LBwNTnyKPWhonDEKk1fA5EaOLZ%2B7mSAZW4Nz70XoYekYUlRcUfnvs8QZCMPH%2BkbYYzTJLaaxYBq81vWF%2FtKH7RVbeRcVPZx7YSziLJ7Ri%2FXdeCp%2B2a3UiSHsBrAFLR7TdxvFgvKP99BExjWqj1Aot0N3T1GxtdQB%2BCwtzG1qh%2FlN2mguCRf%2BVmKQEv8y84otP4OiWyvO%2FQ47vDbc%2Bsvg%3D%3D HTTP/1.1[0m" 200 -
+114.221.190.73 - - [17/Mar/2019 09:42:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+61.129.8.179 - - [17/Mar/2019 09:43:22] "[37mGET /?nsukey=q7LBwNTnyKPWhonDEKk1fA5EaOLZ%2B7mSAZW4Nz70XoYekYUlRcUfnvs8QZCMPH%2BkbYYzTJLaaxYBq81vWF%2FtKH7RVbeRcVPZx7YSziLJ7Ri%2FXdeCp%2B2a3UiSHsBrAFLR7TdxvFgvKP99BExjWqj1Aot0N3T1GxtdQB%2BCwtzG1qh%2FlN2mguCRf%2BVmKQEv8y84otP4OiWyvO%2FQ47vDbc%2Bsvg%3D%3D HTTP/1.1[0m" 200 -
+54.202.225.77 - - [17/Mar/2019 09:43:22] "[37mGET /?nsukey=q7LBwNTnyKPWhonDEKk1fA5EaOLZ%2B7mSAZW4Nz70XoYekYUlRcUfnvs8QZCMPH%2BkbYYzTJLaaxYBq81vWF%2FtKH7RVbeRcVPZx7YSziLJ7Ri%2FXdeCp%2B2a3UiSHsBrAFLR7TdxvFgvKP99BExjWqj1Aot0N3T1GxtdQB%2BCwtzG1qh%2FlN2mguCRf%2BVmKQEv8y84otP4OiWyvO%2FQ47vDbc%2Bsvg%3D%3D HTTP/1.1[0m" 200 -
+113.96.219.249 - - [17/Mar/2019 10:40:24] "[37mGET /?nsukey=PWvPg4Q3ivfYswSIC02BL2Fu63f3vBdVJ87qAfs02BaUszz02BhA2Bkt1C2BA8tofRvNV1Ut4Nxod7ZqpHb2FM6IZZJGpFKIOMEvuPlwFZ6Ok89GR2F2FcEuWvf6BEqHyjrpbhLOCXb8ZD2FRjrQ2FEj8n2BG9r4pMqqeBM4YCtgCinFE6YnFAjADGuZkLHfLnpwIfZRWceB HTTP/1.1[0m" 200 -
+101.226.225.85 - - [17/Mar/2019 10:40:36] "[37mGET /?nsukey=PWvPg4Q3ivfYswSIC02BL2Fu63f3vBdVJ87qAfs02BaUszz02BhA2Bkt1C2BA8tofRvNV1Ut4Nxod7ZqpHb2FM6IZZJGpFKIOMEvuPlwFZ6Ok89GR2F2FcEuWvf6BEqHyjrpbhLOCXb8ZD2FRjrQ2FEj8n2BG9r4pMqqeBM4YCtgCinFE6YnFAjADGuZkLHfLnpwIfZRWceB HTTP/1.1[0m" 200 -
+49.7.4.49 - - [17/Mar/2019 10:40:43] "[37mGET /?nsukey=PWvPg4Q3ivfYswSIC0%2BL%2Fu63f3vBdVJ87qAfs0%2BaUszz0%2BhA%2Bkt1C%2BA8tofRvNV1Ut4Nxod7ZqpHb%2FM6IZZJGpFKIOMEvuPlwFZ6Ok89GR%2F%2FcEuWvf6BEqHyjrpbhLOCXb8ZD%2FRjrQ%2FEj8n%2BG9r4pMqqeBM4YCtgCinFE6YnFAjADGuZkLHfLnpwIfZRWceB HTTP/1.1[0m" 200 -
+61.151.179.27 - - [17/Mar/2019 10:40:45] "[37mGET /?nsukey=PWvPg4Q3ivfYswSIC02BL2Fu63f3vBdVJ87qAfs02BaUszz02BhA2Bkt1C2BA8tofRvNV1Ut4Nxod7ZqpHb2FM6IZZJGpFKIOMEvuPlwFZ6Ok89GR2F2FcEuWvf6BEqHyjrpbhLOCXb8ZD2FRjrQ2FEj8n2BG9r4pMqqeBM4YCtgCinFE6YnFAjADGuZkLHfLnpwIfZRWceB HTTP/1.1[0m" 200 -
+49.95.216.94 - - [17/Mar/2019 10:40:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+61.129.6.174 - - [17/Mar/2019 10:41:23] "[37mGET /?nsukey=PWvPg4Q3ivfYswSIC0%2BL%2Fu63f3vBdVJ87qAfs0%2BaUszz0%2BhA%2Bkt1C%2BA8tofRvNV1Ut4Nxod7ZqpHb%2FM6IZZJGpFKIOMEvuPlwFZ6Ok89GR%2F%2FcEuWvf6BEqHyjrpbhLOCXb8ZD%2FRjrQ%2FEj8n%2BG9r4pMqqeBM4YCtgCinFE6YnFAjADGuZkLHfLnpwIfZRWceB HTTP/1.1[0m" 200 -
+61.129.6.251 - - [17/Mar/2019 10:41:27] "[37mGET /?nsukey=PWvPg4Q3ivfYswSIC0%2BL%2Fu63f3vBdVJ87qAfs0%2BaUszz0%2BhA%2Bkt1C%2BA8tofRvNV1Ut4Nxod7ZqpHb%2FM6IZZJGpFKIOMEvuPlwFZ6Ok89GR%2F%2FcEuWvf6BEqHyjrpbhLOCXb8ZD%2FRjrQ%2FEj8n%2BG9r4pMqqeBM4YCtgCinFE6YnFAjADGuZkLHfLnpwIfZRWceB HTTP/1.1[0m" 200 -
+66.249.83.10 - - [17/Mar/2019 11:00:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+176.32.33.145 - - [17/Mar/2019 23:05:18] "[33mGET //a2billing/customer/templates/default/footer.tpl HTTP/1.1[0m" 404 -
+176.32.33.145 - - [17/Mar/2019 23:05:19] code 400, message Bad request version ('\x00\x9eÀ(À$À\x14À')
+176.32.33.145 - - [17/Mar/2019 23:05:19] "[1m[35m ü  øäÖÕ/óð*!¦bw¡©lßÑÇÄ¸ÿ  À0À,À2À.À/À+À1À- ¥ £ ¡  ¤ ¢   À(À$ÀÀ[0m" HTTPStatus.BAD_REQUEST -
+71.6.232.5 - - [18/Mar/2019 00:27:55] "[37mGET / HTTP/1.1[0m" 200 -
+122.228.19.80 - - [18/Mar/2019 01:54:43] "[33mGET /mahua/v/20190212/8dfcb2192a5052e5a152b9d8115201af_24f3fa0cbc00474fab1610181191b09c_0.m3u8 HTTP/1.1[0m" 404 -
+121.225.153.53 - - [18/Mar/2019 08:49:25] "[37mGET / HTTP/1.1[0m" 200 -
+121.225.153.53 - - [18/Mar/2019 08:49:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+121.225.153.53 - - [18/Mar/2019 08:51:08] "[1m[31mPOST /api/users HTTP/1.1[0m" 400 -
+54.202.149.41 - - [18/Mar/2019 08:51:58] "[37mGET / HTTP/1.1[0m" 200 -
+121.225.153.53 - - [18/Mar/2019 08:51:59] "[1m[31mPOST /api/users HTTP/1.1[0m" 400 -
+148.177.96.201 - - [18/Mar/2019 08:54:56] "[1m[31mPOST /api/users HTTP/1.1[0m" 400 -
+199.65.192.241 - - [18/Mar/2019 08:57:14] "[1m[31mPOST /api/users HTTP/1.1[0m" 400 -
+66.249.83.12 - - [18/Mar/2019 14:35:46] "[37mGET / HTTP/1.1[0m" 200 -
+66.249.83.10 - - [18/Mar/2019 14:35:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+115.238.194.112 - - [18/Mar/2019 14:38:13] "[37mGET / HTTP/1.1[0m" 200 -
+115.238.194.112 - - [18/Mar/2019 14:39:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+115.238.194.112 - - [18/Mar/2019 14:40:23] "[37mGET / HTTP/1.1[0m" 200 -
+176.32.33.145 - - [19/Mar/2019 03:22:08] code 400, message Bad request version ('B')
+176.32.33.145 - - [19/Mar/2019 03:22:08] "[1m[35m ü  øpÁ#5ògÐ¯_Ýë»«lÆÄB[0m" HTTPStatus.BAD_REQUEST -
+176.32.33.145 - - [19/Mar/2019 03:22:09] "[33mGET //vtigercrm/vtigerservice.php HTTP/1.1[0m" 404 -
+61.129.8.250 - - [19/Mar/2019 05:19:15] "[37mGET /?nsukey=jRi2FbwOWHoq6SPLCRMr3OzKdCo2FtBnKhV9OdYFIrxGOSBzHtVqJYEylx6R74nA9Evvaot3Ns2WgoReE58C2FllnEB45M1NgAjuPkaiRc0IUmquEPT6a3IlMUuPipWU0k48Y2FiZx2F9OIegyy9h0lPTznX1jAcBcrsefzuGHIElfMoWh2BOgZzg9Zsop6ThiF2t4dkX2FzFY4GTG5AKYKTO65Hg3D3D HTTP/1.1[0m" 200 -
+61.151.178.167 - - [19/Mar/2019 05:19:17] "[37mGET /?nsukey=jRi2FbwOWHoq6SPLCRMr3OzKdCo2FtBnKhV9OdYFIrxGOSBzHtVqJYEylx6R74nA9Evvaot3Ns2WgoReE58C2FllnEB45M1NgAjuPkaiRc0IUmquEPT6a3IlMUuPipWU0k48Y2FiZx2F9OIegyy9h0lPTznX1jAcBcrsefzuGHIElfMoWh2BOgZzg9Zsop6ThiF2t4dkX2FzFY4GTG5AKYKTO65Hg3D3D HTTP/1.1[0m" 200 -
+101.89.29.97 - - [19/Mar/2019 05:20:14] "[37mGET /?nsukey=jRi%2FbwOWHoq6SPLCRMr3OzKdCo%2FtBnKhV9OdYFIrxGOSBzHtVqJYEylx6R74nA9Evvaot3Ns2WgoReE58C%2FllnEB45M1NgAjuPkaiRc0IUmquEPT6a3IlMUuPipWU0k48Y%2FiZx%2F9OIegyy9h0lPTznX1jAcBcrsefzuGHIElfMoWh%2BOgZzg9Zsop6ThiF2t4dkX%2FzFY4GTG5AKYKTO65Hg%3D%3D HTTP/1.1[0m" 200 -
+61.151.178.177 - - [19/Mar/2019 05:20:18] "[37mGET /?nsukey=jRi%2FbwOWHoq6SPLCRMr3OzKdCo%2FtBnKhV9OdYFIrxGOSBzHtVqJYEylx6R74nA9Evvaot3Ns2WgoReE58C%2FllnEB45M1NgAjuPkaiRc0IUmquEPT6a3IlMUuPipWU0k48Y%2FiZx%2F9OIegyy9h0lPTznX1jAcBcrsefzuGHIElfMoWh%2BOgZzg9Zsop6ThiF2t4dkX%2FzFY4GTG5AKYKTO65Hg%3D%3D HTTP/1.1[0m" 200 -
+222.66.158.164 - - [19/Mar/2019 05:48:10] "[37mGET / HTTP/1.1[0m" 200 -
+222.66.158.164 - - [19/Mar/2019 05:48:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+34.227.28.217 - - [19/Mar/2019 05:50:04] "[37mGET / HTTP/1.1[0m" 200 -
+61.240.204.89 - - [19/Mar/2019 13:58:11] code 400, message Bad request syntax ('\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x03\x00\x00\x00')
+61.240.204.89 - - [19/Mar/2019 13:58:11] "[1m[35m  à          [0m" HTTPStatus.BAD_REQUEST -
+176.32.33.145 - - [19/Mar/2019 19:12:33] "[37mGET / HTTP/1.1[0m" 200 -
+176.32.33.145 - - [19/Mar/2019 19:12:34] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00ü\x01\x00\x00ø\x03\x03õ§\x1bþE¼ý¸²ûiÜ°dÐ¡<¢\x9f#Z\x93½\x11`ûh\x7f\x86¼có\x00\x00\x8cÀ0À,À2À.À/À+À1À-\x00¥\x00£\x00¡\x00\x9f\x00¤\x00¢\x00')
+176.32.33.145 - - [19/Mar/2019 19:12:34] "[1m[35m ü  øõ§þE¼ý¸²ûiÜ°dÐ¡<¢#Z½`ûh¼có  À0À,À2À.À/À+À1À- ¥ £ ¡  ¤ ¢   À(À$ÀÀ[0m" HTTPStatus.BAD_REQUEST -
+71.6.199.23 - - [19/Mar/2019 19:13:26] "[37mGET / HTTP/1.1[0m" 200 -
+71.6.199.23 - - [19/Mar/2019 19:13:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+196.52.43.115 - - [20/Mar/2019 00:53:22] "[37mGET / HTTP/1.0[0m" 200 -
+173.212.225.214 - - [20/Mar/2019 01:22:51] code 400, message Bad request syntax ('\x16\x03\x01\x00ü\x01\x00\x00ø\x03\x03å\x16,\x04`s½\x83µ\x97¼VÖ\x84îÔ9\x1aô\x16ÂãëK\x1eD\x01\x96\x7f6\tû\x00\x00\x8cÀ0À,À2À.À/À+À1À-\x00¥\x00£\x00¡\x00\x9f\x00¤\x00¢\x00\xa0\x00\x9eÀ(À$À\x14À')
+173.212.225.214 - - [20/Mar/2019 01:22:51] "[1m[35m ü  øå,`s½µ¼VÖîÔ9ôÂãëKD6	û  À0À,À2À.À/À+À1À- ¥ £ ¡  ¤ ¢   À(À$ÀÀ[0m" HTTPStatus.BAD_REQUEST -
+173.212.225.214 - - [20/Mar/2019 01:22:51] code 400, message Bad request syntax ('\x16\x03\x01\x00ü\x01\x00\x00ø\x03\x03f\x80³\x04£gp\x86\x1cDx\x9a\xa0ÒÌÓ\x0f¨¨\x8b©C"\x00}öëJ\x0f[<è\x00\x00\x8cÀ0À,À2À.À/À+À1À-\x00¥\x00£\x00¡\x00\x9f\x00¤\x00¢\x00\xa0\x00\x9eÀ(À$À\x14À')
+173.212.225.214 - - [20/Mar/2019 01:22:51] "[1m[35m ü  øf³£gpDx ÒÌÓ¨¨©C" }öëJ[<è  À0À,À2À.À/À+À1À- ¥ £ ¡  ¤ ¢   À(À$ÀÀ[0m" HTTPStatus.BAD_REQUEST -
+173.212.225.214 - - [20/Mar/2019 01:22:51] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00ü\x01\x00\x00ø\x03\x03§{Ùåè\x03Qóâ'\x8b\x9dI×ôeDd`6z%þåÈWiTÁ\x19\x91¿\x00\x00\x8cÀ0À,À2À.À/À+À1À-\x00¥\x00£\x00¡\x00\x9f\x00¤\x00¢\x00")
+173.212.225.214 - - [20/Mar/2019 01:22:51] "[1m[35m ü  ø§{ÙåèQóâ'I×ôeDd`6z%þåÈWiTÁ¿  À0À,À2À.À/À+À1À- ¥ £ ¡  ¤ ¢   À(À$ÀÀ[0m" HTTPStatus.BAD_REQUEST -
+173.212.225.214 - - [20/Mar/2019 01:22:52] code 400, message Bad request version ('\x00\x9eÀ(À$À\x14À')
+173.212.225.214 - - [20/Mar/2019 01:22:52] "[1m[35m ü  ø Kbªr£²&Åù¦é¥¨3x¦-ó^µ=H  À0À,À2À.À/À+À1À- ¥ £ ¡  ¤ ¢   À(À$ÀÀ[0m" HTTPStatus.BAD_REQUEST -
+173.212.225.214 - - [20/Mar/2019 01:22:52] code 400, message Bad request version ('\x00\x9eÀ(À$À\x14À')
+173.212.225.214 - - [20/Mar/2019 01:22:52] "[1m[35m ü  ø_ç÷DPÖï<}ö²ÅíiãCA1¼ Y.  À0À,À2À.À/À+À1À- ¥ £ ¡  ¤ ¢   À(À$ÀÀ[0m" HTTPStatus.BAD_REQUEST -
+173.212.225.214 - - [20/Mar/2019 01:22:52] code 400, message Bad request syntax ('\x16\x03\x01\x00ü\x01\x00\x00ø\x03\x03ÿ\x86<\xa0\x16H³¸þ¨®¯\x19vÚä©\x0c@\x94Tðåd«\x8c\x07´lÁ\x93\\\x00\x00\x8cÀ0À,À2À.À/À+À1À-\x00¥\x00£\x00¡\x00\x9f\x00¤\x00¢\x00\xa0\x00\x9eÀ(À$À\x14À')
+173.212.225.214 - - [20/Mar/2019 01:22:52] "[1m[35m ü  øÿ< H³¸þ¨®¯vÚä©@Tðåd«´lÁ\  À0À,À2À.À/À+À1À- ¥ £ ¡  ¤ ¢   À(À$ÀÀ[0m" HTTPStatus.BAD_REQUEST -
+173.212.225.214 - - [20/Mar/2019 01:22:52] code 400, message Bad request syntax ('\x16\x03\x01\x00ü\x01\x00\x00ø\x03\x03\x8eµ7îÈ')
+173.212.225.214 - - [20/Mar/2019 01:22:52] "[1m[35m ü  øµ7îÈ[0m" HTTPStatus.BAD_REQUEST -
+173.212.225.214 - - [20/Mar/2019 01:22:53] code 400, message Bad request syntax ('\x16\x03\x01\x00ü\x01\x00\x00ø\x03\x03,ë5fj¾õû}')
+173.212.225.214 - - [20/Mar/2019 01:22:53] "[1m[35m ü  ø,ë5fj¾õû}[0m" HTTPStatus.BAD_REQUEST -
+222.66.158.164 - - [20/Mar/2019 02:06:49] "[37mGET / HTTP/1.1[0m" 200 -
+222.66.158.164 - - [20/Mar/2019 02:06:49] "[37mGET / HTTP/1.1[0m" 200 -
+34.209.209.56 - - [20/Mar/2019 02:08:08] "[37mGET / HTTP/1.1[0m" 200 -
+176.32.33.145 - - [20/Mar/2019 03:23:09] "[33mGET //a2billing/customer/templates/default/footer.tpl HTTP/1.1[0m" 404 -
+176.32.33.145 - - [20/Mar/2019 03:23:10] code 400, message Bad request syntax ('\x16\x03\x01\x00ü\x01\x00\x00ø\x03\x03õ\x87\x89g{æË*ê\x8aqWôU\x97ß\xadÕótFm\x125\råb\x9c¿\x85çû\x00\x00\x8cÀ0À,À2À.À/À+À1À-\x00¥\x00£\x00¡\x00\x9f\x00¤\x00¢\x00\xa0\x00\x9eÀ(À$À\x14À')
+176.32.33.145 - - [20/Mar/2019 03:23:10] "[1m[35m ü  øõg{æË*êqWôUß­ÕótFm5åb¿çû  À0À,À2À.À/À+À1À- ¥ £ ¡  ¤ ¢   À(À$ÀÀ[0m" HTTPStatus.BAD_REQUEST -
+222.66.158.164 - - [20/Mar/2019 05:31:43] "[37mGET / HTTP/1.1[0m" 200 -
+34.220.151.96 - - [20/Mar/2019 05:33:11] "[37mGET / HTTP/1.1[0m" 200 -
